@@ -1,0 +1,94 @@
+<meta charset="UTF-8"/>
+<script>
+    /*
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual. 
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    // ENTRADA DE DADOS
+
+let hemisfério = prompt(`Em qual hemifério você está?`).toLowerCase();
+let mes = prompt(`Em qual mês você está?`).toLowerCase();    
+    // PROCESSAMENTO
+switch(hemisfério){
+
+    case `norte`:
+        hemisfério = 0
+        break;
+
+     case `sul`:
+        hemisfério = 1
+        break;
+
+}
+
+switch(hemisfério){
+
+//hemiferio norte
+
+    case 0:
+        switch(mes){
+
+            case `dezembro`:
+            case `janeiro`:
+            case `fevereiro`:
+                document.write(`Inverno`)
+                break;
+
+            case `março`:
+            case `abril`:
+            case `maio`:
+                document.write(`Primavera`)
+                break;
+                
+            case `junho`:
+            case `julho`:
+            case `agosto`:
+                document.write(`Verão`)
+                break;
+                
+            case `setembro`:
+            case `outubro`:
+            case `novembro`:
+                document.write(`Outono`)
+                break;}
+            break;
+//hemiferio sul
+    
+    case 1:
+        switch(mes){
+
+            case `dezembro`:
+            case `janeiro`:
+            case `fevereiro`:
+                document.write(`Verão`)
+                break;
+
+            case `março`:
+            case `abril`:
+            case `maio`:
+                document.write(`Outono`)
+                break;
+                
+            case `junho`:
+            case `julho`:
+            case `agosto`:
+                document.write(`Inverno`)
+                break;
+                
+            case `setembro`:
+            case `outubro`:
+            case `novembro`:
+                document.write(`Primavera`)
+                break;}
+            break;
+
+
+        }
+
+
+    // SAÍDA DE DADOS
+
+
+
+</script>
